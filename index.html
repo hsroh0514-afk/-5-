@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Notification Hub</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+      color:white;
+    }
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:40px 20px;
+    }
+    h1{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+    .subtitle{
+      color:#cbd5e1;
+      font-size:20px;
+      margin-bottom:40px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:rgba(255,255,255,0.08);
+      border-radius:24px;
+      padding:25px;
+      backdrop-filter:blur(10px);
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:translateY(-8px);
+    }
+    .count{
+      font-size:50px;
+      font-weight:bold;
+      margin:15px 0;
+    }
+    .hero{
+      text-align:center;
+      padding:70px 20px;
+      background:linear-gradient(90deg,#06b6d4,#2563eb);
+      border-radius:35px;
+      margin-top:50px;
+    }
+    button{
+      padding:15px 28px;
+      border:none;
+      border-radius:18px;
+      font-size:18px;
+      font-weight:bold;
+      cursor:pointer;
+      margin:10px;
+    }
+    .white{
+      background:white;
+      color:black;
+    }
+    .dark{
+      background:rgba(0,0,0,0.35);
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Notification Hub</h1>
+    <div class="subtitle">
+      AI 기반 알림 자동 묶음 및 우선순위 정리 시스템
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>학교 공지</h2>
+        <div class="count">12</div>
+        <p>과제 및 시간표 변경 자동 분류</p>
+      </div>
+
+      <div class="card">
+        <h2>SNS 알림</h2>
+        <div class="count">28</div>
+        <p>DM 및 댓글 알림 묶음 관리</p>
+      </div>
+
+      <div class="card">
+        <h2>쇼핑 / 결제</h2>
+        <div class="count">7</div>
+        <p>택배 및 할인 알림 자동 정리</p>
+      </div>
+
+      <div class="card">
+        <h2>긴급 알림</h2>
+        <div class="count">2</div>
+        <p>중요 연락 우선 표시</p>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h2 style="font-size:42px;">지금 바로 시작하기</h2>
+      <p style="font-size:20px;">GitHub Pages로 무료 배포 가능</p>
+
+      <button class="white" onclick="window.open('https://pages.github.com/')">
+        GitHub Pages
+      </button>
+
+      <button class="dark" onclick="alert('알림 묶음 시스템 실행')">
+        데모 실행
+      </button>
+    </div>
+  </div>
+</body>
+</html>
